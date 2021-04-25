@@ -1,2 +1,2 @@
-# KebijakanPrivasiHeylaw
-Modal Syarat dan Ketentuan Kebijakan Privasi Heylaw Edu
+# KebijakanPrivasi
+Modal Syarat dan Ketentuan Kebijakan Privasi 
