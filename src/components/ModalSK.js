@@ -68,24 +68,27 @@ const useStyles = makeStyles ((theme) => ({
     fontWeight: '400',
     fontSize: '14px',
   },
-  btnGoogle: {
-    backgroundColor: '##ABABAB',
+
+  btnGoogleKebijakanPrivasi: {
+    backgroundColor: '#ABABAB',
     height: '51px',
-    width: '474px',
+    /*width: '474px',*/
+    width: '552px',
     borderRadius: '5px',
-    paddingLeft: '25px',
-    paddingRight: '25px',
-    border: '2px solid #F5F5F5',
-    '&:hover': {
-      background: '#F5F5F5',
-    },
-    [theme.breakpoints.down('xs')]: {
-      paddingLeft: '10px',
-      paddingRight: '10px',
-    },
+    marginLeft:'30px',
+    marginRight:'30px',
+    marginBottom: '39px',
+    marginTop: '16px',
   },
   icGoogle: {
     width: '30px',
+  },
+  txtbtnGoogleKebijakanPrivasi:{
+    fontFamily: 'Poppins',
+    fontWeight: '600',
+    fontSize: '16px',
+    textAlign: "center",
+    color: '#fff',
   },
 })) 
 
@@ -403,10 +406,10 @@ function ModalSK() {
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Box>
-              {/*<CheckboxButton/>*/}
+            {/*<Box>
+              <CheckboxButton/>
               <FormControl component="fieldset">
-                <FormGroup aria-label="position" row>
+                <FormGroup aria-label="position">
                     <FormControlLabel
                     value="end"
                     control={<Checkbox color="primary" />}
@@ -415,11 +418,11 @@ function ModalSK() {
                 />
                 </FormGroup>
               </FormControl>
-            </Box>
-
+            </Box>*/}
+            
             <Button 
             onClick={handleClose} 
-            className={classes.btnGoogle}
+            className={classes.btnGoogleKebijakanPrivasi}
             variant="contained"
             >
               <img
@@ -427,11 +430,13 @@ function ModalSK() {
                 alt='google minit'
                 className={classes.icGoogle}
               />
-              &nbsp;
-              <Typography>
+              &nbsp;&nbsp;
+              <Typography className={classes.txtbtnGoogleKebijakanPrivasi}>
                 Masuk & daftar dengan Google
               </Typography>
-            </Button>
+            </Button>  
+            
+            
           </DialogActions>
         </Dialog>
       </container>
