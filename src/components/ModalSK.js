@@ -16,7 +16,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 
 const useStyles = makeStyles ((theme) => ({
-  containerDialogSK:{
+  containerKebijakanPrivasi:{
     width: '534px',
     height: '851px',
     paddingLeft:'35px',
@@ -123,7 +123,7 @@ function ModalSK() {
     <div>
       <Button onClick={handleClickOpen('paper')}>scroll=paper</Button>
       <container
-        className= {classes.containerDialogSK}
+        className= {classes.containerKebijakanPrivasi}
       >
         <Dialog
           open={open}
